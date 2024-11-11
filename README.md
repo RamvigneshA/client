@@ -2,7 +2,7 @@
 # Title:Book Store DataBase Project [CRUD]Operation
 
 A full-stack web application to manage a bookstore.
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![img alt](https://github.com/RamvigneshA/client/blob/main/bookDB.png?raw=true)
 
 
 ## Features
@@ -42,4 +42,4 @@ API endpoints are defined for CRUD operations on books and user authentication.
 
 
 
-![img alt](https://github.com/RamvigneshA/client/blob/main/bookDB.png?raw=true)
+
