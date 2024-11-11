@@ -5,6 +5,12 @@ A full-stack web application to manage a bookstore.
 ## Screenshots
 ![img alt](https://github.com/RamvigneshA/client/blob/main/bookDB.png?raw=true)
 
+## Technology Stack
+**Frontend:** React
+
+**Backend:** Node.js and Express.js
+
+**Database:** MySQL
 
 ## Features
 
@@ -28,12 +34,7 @@ API endpoints are defined for CRUD operations on books and user authentication.
 
 
 
-## Technology Stack
-**Frontend:** React
 
-**Backend:** Node.js and Express.js
-
-**Database:** MySQL
 
 
 
