@@ -14,16 +14,15 @@ const Add = () => {
   const handlechange = (e) => {
     setBook(prev=>({...prev,[e.target.name]:e.target.value}))
   }
-  const handleClick = (e) => {
-    
+  const handleClick = async () => {
     try {
-      axios.post('https://backendbookdb.onrender.com/books', book)
-      navigateTo('/books')
-      
+      await axios.post('https://backendbookdb.onrender.com/books', book);
+      navigateTo('/books'); // Navigate only on success
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
-  }
+  };
+
   console.log(book);
   return (
     <div className="form">

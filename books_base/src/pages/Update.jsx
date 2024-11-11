@@ -17,18 +17,15 @@ const Update = () => {
   const handlechange = (e) => {
     setBook(prev=>({...prev,[e.target.name]:e.target.value}))
   }
-  const handleClick = (e) => {
-    
+  const handleClick = async () => {
     try {
-      axios.put('https://backendbookdb.onrender.com/books/'+bookId, book)
-      navigateTo('/books')
-      window.location.reload();
-      
+      await axios.put('https://backendbookdb.onrender.com/books/' + bookId, book);
+      navigateTo('/books');
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      // Handle error gracefully, e.g., display an error message
     }
-
-  }
+  };
   return (
     <div className="form">
       <h1>Update the Book</h1>
